@@ -1,2 +1,2 @@
-### Compiling to a PDF 
-``pdflatex resume.tex``
+# Compiling to a PDF 
+- Run ``pdflatex resume.tex``
