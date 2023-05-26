@@ -1,1 +1,2 @@
-### Luke's Resume
+### Compiling to a PDF 
+``pdflatex resume.tex``
