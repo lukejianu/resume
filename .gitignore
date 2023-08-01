@@ -1,3 +1,4 @@
 # Log files that pdflatex generates.
 *.log
+*.swp
 .DS_Store
