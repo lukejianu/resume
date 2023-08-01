@@ -19,6 +19,7 @@
 \usepackage[parfill]{parskip}       % Do not indent paragraphs
 \usepackage{array}                  % required for boldface tabular columns
 \usepackage{ifthen}
+\usepackage[dvipsnames]{xcolor}
 
 \nofiles                            % .aux files are not needed for resumes
 \pagestyle{empty}                   % resumes do not need page numbers
@@ -81,7 +82,7 @@
 % Used to create large resume section
 \newenvironment{rSection}[1]{
   \sectionskip
-  \MakeUppercase{\bf #1}
+  \MakeUppercase{\textbf{#1}}
   \sectionlineskip
   \hrule
   \begin{list}{}{
