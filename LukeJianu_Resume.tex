@@ -25,8 +25,11 @@
   \begin{rSection}{Experience}
 
     \begin{rSubsection}{Belvedere Trading}{Jun. 2023 - Aug. 2023}{Software Engineer Intern}{Chicago, IL}
-    \item Building a high-performance, low-latency proxy service in C++ to remove redundant network
-      connections between data centers, resulting in a \textbf{70\% reduction} in bandwidth usage for proxied services.
+      \item Built a low-latency, service-agnostic proxy in C++ to aggregate redundant TCP
+        connections between datacenters, resulting in a \textbf{70\% reduction} in bandwidth usage for proxied services.
+      \item Optimized performance through the use of asynchronous message passing, implemented with
+        the visitor design pattern (std::variant), enabling the processing of \textbf{5.4Tb of data} daily.
+      \item Modified the service discovery algorithm in C\# to match clients with services in the same datacenter.
     \end{rSubsection}
 
     \begin{rSubsection}{Amazon Robotics}{Jan. 2023 - Jun. 2023}{Software Development Engineer Co-op}{North Reading, MA}
@@ -41,13 +44,9 @@
     \end{rSubsection}
 
     \begin{rSubsection}{S3Global}{May 2022 - Aug. 2022}{Software Development Intern}{Redmond, WA}
-      \item Created a .NET application to interface with \href{https://emergentvisiontec.com/}{high-speed cameras}, implemented
-        using WPF in C\# and \\ interop with the camera's C++ SDK for video streaming.
-    \end{rSubsection}
-
-    \begin{rSubsection}{Seattle Sport Sciences}{May 2021 - Aug. 2021}{Intern}{Redmond, WA}
-      \item Conducted data trials for cloud-based AI/ML analysis of \textbf{30+ soccer matches}, while
-        also performing maintenance and troubleshooting for camera hardware, network connections, and deployment tools.
+      \item Created a .NET WPF application to interface with \textbf{12 \href{https://emergentvisiontec.com/}{high-speed cameras}}, 
+        including functionality to toggle recording, change scale and video RGB, and reboot bugged cameras.
+      \item Implemented streaming using C++ interop with the camera's SDK to dump frames into shared buffers.
     \end{rSubsection}
 
   \end{rSection}
@@ -59,15 +58,14 @@
     \end{rSubsection}
 
     \begin{rSubsection}{Trading Bot}{Jul. 2022}{Participant at Jane Street's Electronic Trading Challenge}{Seattle, WA}
-      \item Placed \textbf{10\textsuperscript{th} out of 32 teams} by quickly programming bond
-        penny-pinching and ADR/ETF arbitrage strategies in Python.
+      \item Placed \textbf{10\textsuperscript{th}} by quickly programming penny-pinching and ADR/ETF arbitrage strategies in Python.
     \end{rSubsection}
 
    \end{rSection}
   \begin{rSection}{Technical Skills}
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
       Computer Languages & C++, Java, Python, JavaScript, TypeScript, SQL \\
-      Tools \& Technologies & Vim, Git, AWS, Docker, React, Prisma, Flask
+      Tools \& Technologies & Vim, Git, AWS, Docker, React, Prisma
     \end{tabular}
   \end{rSection}
 \end{document}
