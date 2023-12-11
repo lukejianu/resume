@@ -1,10 +1,13 @@
 \documentclass{resume}
 
 \usepackage[left=0.75in,top=0.51in,right=0.75in,bottom=0.51in]{geometry}
-\usepackage{hyperref}
+\usepackage{hyperref,xcolor}
+\usepackage[ocgcolorlinks]{ocgx2}
+
+\hypersetup{allcolors=blue}
 
 \name{Luke Jianu}
-\address{{+1 (425) 229-1106} \\ 
+\address{{+1(425) 229-1106} \\ 
         {jianuluke@gmail.com} \\
         \href{https://github.com/lukejianu}{github/lukejianu} \\
         \href{https://www.linkedin.com/in/lukejianu/}{linkedin/lukejianu}}
@@ -14,33 +17,44 @@
 
 \begin{document}
   \begin{rSection}{Education}
+
     \begin{rSubsection}{Northeastern University}{Sept. 2021 - May 2025}
       {\normalfont B.S. in Computer Science, 4.00/4.00 GPA, Dean's Merit Scholarship}{Boston, MA}
+      \begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
+          \emph{Relevant} & Software Development, Object-Oriented Design, Algorithms \& Data \\
+          \emph{Coursework} & Computer Systems, Programming Languages, Database Design \\
+      \end{tabular}
+
       \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-          \emph{Relevant} & Object-Oriented Design, Algorithms \& Data, Computer Systems \\
-          \emph{Coursework} & Programming Languages, Database Design, Logic \& Computation \\
-      \end{tabular} 
+        \emph{Teaching} & Software Development, \href{https://felleisen.org/matthias/}{Matthias Felleisen} (Fall 2024) \\
+        \emph{Assistant} & Logic \& Computation, \href{https://dbp.io/}{Daniel Patterson} (Spring 2024) \\
+      \end{tabular}
+
     \end{rSubsection}
+
   \end{rSection}
   \begin{rSection}{Experience}
+
+    \begin{rSubsection}{Databricks}{May 2024 - Aug. 2024}{Incoming Software Engineer Intern}{Bellevue, WA}
+    \end{rSubsection}
 
     \begin{rSubsection}{Belvedere Trading}{June 2023 - Aug. 2023}{Software Engineer Intern}{Chicago, IL}
       \item Built a low-latency, service-agnostic proxy in C++ to aggregate redundant TCP
         connections between datacenters, resulting in a \textbf{70\% reduction} in bandwidth usage for proxied services.
       \item Optimized performance through the use of asynchronous message passing, implemented with the visitor
-        design pattern (std::variant), enabling the processing of \textbf{5.4Tb of data} daily.      
+        design pattern (std::visit), enabling the processing of \textbf{5.4Tb of data} daily.      
       \item Upgraded the C\# service discovery algorithm to match clients with services in the same datacenter.
     \end{rSubsection}
 
     \begin{rSubsection}{Amazon Robotics}{Jan. 2023 - June 2023}{Software Development Engineer Co-op}{North Reading, MA}
       \item Empowered AR teams to rapidly grow, monitor and manage their device fleets at scale by inventing and simplifying
         features in my team's 
-        \textbf{\href{https://www.allthingsdistributed.com/2021/07/amazon-robotics-on-aws.html}{Comprehensive Device Management}} solution. 
+        \href{https://www.allthingsdistributed.com/2021/07/amazon-robotics-on-aws.html}{Comprehensive Device Management} solution. 
       \item Architected an efficient, fault-tolerant workflow in AWS Lambda with Kotlin for modifying 
         robot location data, enabling teams to avoid \textbf{1000+ hours} of OS and software reinstalls yearly.
       \item Designed a device timeline feature in AWS CDK with TypeScript, providing insights for \textbf{30k+ devices}. 
       \item Refactored a large, imperative-style vanilla React codebase with functional-style 
-        TypeScript \& React Query, resulting in a \textbf{75\% reduction} in API calls and \textbf{50\% faster} loading times.
+        TypeScript \& React Query, resulting in a \textbf{95\% reduction} in API calls and \textbf{50\% faster} loading times.
     \end{rSubsection}
 
     \begin{rSubsection}{S3Global}{May 2022 - Aug. 2022}{Software Development Intern}{Redmond, WA}
@@ -52,23 +66,21 @@
     \end{rSubsection}
 
   \end{rSection}
-  
-  \begin{rSection}{Projects}
+ \begin{rSection}{Projects}
 
-    \begin{rSubsection}{NUCarpool}{Sept. 2022 - Present}{Software Developer at Sandbox}{Boston, MA}
-      \item Developing a web app using the T3 stack for Northeastern students to find co-op carpool groups.
-    \end{rSubsection}
-
-    \begin{rSubsection}{Trading Bot}{July 2022}{Participant at Jane Street's Electronic Trading Challenge}{Seattle, WA}
-      \item Placed \textbf{10\textsuperscript{th}} by quickly programming penny-pinching and ADR/ETF arbitrage strategies in Python.
+   \begin{rSubsection}{Rust Operating System}{Dec. 2023 - Present}{}{}
+   \item Designing and developing a small OS in Rust, with a focus on systematic design, loosely
+     following the blog post \href{https://os.phil-opp.com/}{\emph{Writing an OS in Rust} by Phillip Oppermann}.
     \end{rSubsection}
 
    \end{rSection}
+  
   \begin{rSection}{Technical Skills}
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-      Computer Languages & C++, Java, Python, JavaScript, TypeScript, SQL \\
+      Programming Languages & Java, C++, Python, JavaScript, TypeScript, SQL \\
       Tools \& Technologies & Vim, Linux, Git, AWS, Docker, Node, React, Prisma, Flask, Splunk
     \end{tabular}
   \end{rSection}
+
 \end{document}
 
