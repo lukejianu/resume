@@ -1,2 +1,2 @@
 # Compiling to a PDF 
-- ``make``.
+- ``make``
