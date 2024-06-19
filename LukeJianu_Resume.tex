@@ -16,6 +16,7 @@
 \def\sectionskip{\medskip}
 
 \begin{document}
+  \vspace{-5pt}
   \begin{rSection}{Education}
 
     \begin{rSubsection}{Northeastern University}{Sept. 2021 - May 2025}
@@ -27,22 +28,25 @@
 
       \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
         \emph{Teaching} & Logic \& Computation, \href{https://dbp.io/}{Daniel Patterson} (Spring 2024) \\
-        \emph{Assistant} & Software Development, \href{https://felleisen.org/matthias/}{Matthias Felleisen} (Fall 2024) \\
+        \emph{Assistant} & Fundamentals of CS I, \href{https://dbp.io/}{Daniel Patterson} (Fall 2024) \\
+                        & Software Development, \href{https://felleisen.org/matthias/}{Matthias Felleisen} (Fall 2024) \\
       \end{tabular}
 
     \end{rSubsection}
 
   \end{rSection}
+
+  \vspace{-5pt}
   \begin{rSection}{Experience}
 
-    \begin{rSubsection}{Databricks}{May 2024 - Aug. 2024}{Incoming Software Engineer Intern}{Bellevue, WA}
+    \begin{rSubsection}{Databricks}{May 2024 - Aug. 2024}{Software Engineer Intern}{Bellevue, WA}
+      \item Extending a testing tool in Scala to evaluate the performance of a distributed
+      OLTP database under production traffic loads.
     \end{rSubsection}
 
     \begin{rSubsection}{Belvedere Trading}{June 2023 - Aug. 2023}{Software Engineer Intern}{Chicago, IL}
       \item Built a low-latency, service-agnostic proxy in C++ to aggregate redundant TCP
         connections between datacenters, resulting in a \textbf{70\% reduction} in bandwidth usage for proxied services.
-      \item Optimized performance through the use of asynchronous message passing, implemented with the visitor
-        design pattern (std::visit), enabling the processing of \textbf{5.4Tb of data} daily.      
       \item Upgraded the C\# service discovery algorithm to match clients with services in the same datacenter.
     \end{rSubsection}
 
@@ -52,7 +56,6 @@
         \href{https://www.allthingsdistributed.com/2021/07/amazon-robotics-on-aws.html}{Comprehensive Device Management} solution. 
       \item Architected a new, fault-tolerant workflow in AWS Lambda with Kotlin for modifying 
         robot location data, performing \textbf{20 times faster} than the old workflow.
-      \item Designed a device timeline feature in AWS CDK with TypeScript, providing insights for \textbf{30k+ devices}. 
       \item Refactored a large, imperative-style vanilla React codebase with functional-style 
         TypeScript \& React Query, resulting in a \textbf{95\% reduction} in API calls and \textbf{50\% faster} loading times.
     \end{rSubsection}
@@ -61,24 +64,28 @@
     \item Designed C++ tooling for benchmarking, testing, and managing 
       \textbf{\href{https://emergentvisiontec.com/}{12 high-speed cameras}} used to capture 
         computer vision training data from the top youth football academies in Spain.
-      \item Implemented a prototype video streaming system with shared frame buffers, leveraging C++ interop with the camera's SDK
-        to display frames in a C\# WPF frontend.
     \end{rSubsection}
 
   \end{rSection}
+
+  \vspace{-5pt}
  \begin{rSection}{Projects}
 
    \begin{rSubsection}{{\href{https://www.lukejianu.com/small-rust-os/}{Rust Operating System}}}{Dec. 2023 - Present}{}{}
-   \item Designing and developing a small OS in Rust, with a focus on systematic design, loosely
-     following the blog post \href{https://os.phil-opp.com/}{\emph{Writing an OS in Rust} by Philipp Oppermann}.
-    \end{rSubsection}
+    \item Designing and developing a small OS in Rust, with a focus on systematic design.  
+   \end{rSubsection}
+
+   \begin{rSubsection}{x64 Compiler}{Jan. 2024 - Apr. 2024}{}{}
+    \item Wrote a compiler for a functional language in OCaml, targeting x64 assembly with a C runtime.
+    \item Supported modern features such as first-class functions, continuations (call/cc), and garbage collection.
+   \end{rSubsection}
 
    \end{rSection}
   
   \begin{rSection}{Technical Skills}
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-      Programming Languages & Java, C/C++, Python, TypeScript, JavaScript, SQL \\
-      Tools \& Technologies & Vim, Linux, Git, AWS, Docker, Node, React
+      Programming Languages & Java, C/C++, Python, JavaScript, SQL \\
+      Tools \& Technologies & Vim, Linux, Git, AWS, Docker, Kubernetes, React
     \end{tabular}
   \end{rSection}
 
